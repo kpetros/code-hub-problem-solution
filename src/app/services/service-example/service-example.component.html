@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-3 mx-auto my-5" *ngFor="let country of countries;">
+        <div class="card">
+            <img [src]=country.flag class="card-img-top">
+            <div class="card-body">
+            <h5 class="card-title">{{country.name}}</h5>
+            <p class="card-text">
+                Capital: {{country.capital}}<br/>
+                Region: {{country.region}}
+            </p>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
